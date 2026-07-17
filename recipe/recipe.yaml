@@ -2,9 +2,9 @@ schema_version: 1
 
 context:
   python_min: "3.12"
-  version: "0.6.1"
+  version: "0.6.2"
   build_number: 0
-  sha256: "5bfc380b8678ba76fe3a8ead8b6cb1e5173ad7e0bbb805da07366eba18fe164e"
+  sha256: "4624adbcb358b9b2db2ea535ae38a2b7f5473b97bad31b6d0b8c6873cfae890a"
 
 package:
   name: ivert
@@ -33,7 +33,6 @@ requirements:
     - python-blosc2
     - click
     - dateparser
-    - gdal
     - geopandas
     - h5py
     - matplotlib-base
