@@ -3,7 +3,7 @@ schema_version: 1
 context:
   python_min: "3.12"
   version: "0.6.6"
-  build_number: 0
+  build_number: 1
   sha256: "6166520423bc733f97747a8438c84f2683e14ec40c101996ebd25b4fcb906e89"
 
 package:
@@ -32,6 +32,10 @@ requirements:
     - python >=${{ python_min }}
     - python-blosc2
     - click
+    # colorama is required by click on Windows for ANSI color support. Listed
+    # unconditionally because noarch packages cannot use platform selectors; it
+    # is a small, pure-Python no-op on non-Windows platforms.
+    - colorama
     - dateparser
     - geopandas
     - h5py
