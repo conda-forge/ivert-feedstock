@@ -2,9 +2,9 @@ schema_version: 1
 
 context:
   python_min: "3.12"
-  version: "0.6.8"
+  version: "0.6.9"
   build_number: 0
-  sha256: "b6dfd514f34779efb79ee90df04db6d2104fd4300c6f42bae2e5ebed02818a07"
+  sha256: "656c438739c552584f3024d29cac4a5f3de110435edf865959c1a74ba9936bde"
 
 package:
   name: ivert
@@ -64,7 +64,7 @@ tests:
         - "*"
       pip_check: true
       imports:
-        - ivert 
+        - ivert
   - script:
       - ivert --help
     requirements:
@@ -81,5 +81,5 @@ about:
 extra:
   recipe-maintainers:
     - matth-love
-    - mmacferrin 
+    - mmacferrin
     - mfisher87
