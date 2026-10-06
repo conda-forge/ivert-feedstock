@@ -2,9 +2,9 @@ schema_version: 1
 
 context:
   python_min: "3.12"
-  version: "0.6.8"
+  version: "0.7.0"
   build_number: 0
-  sha256: "b6dfd514f34779efb79ee90df04db6d2104fd4300c6f42bae2e5ebed02818a07"
+  sha256: "8c9b588c5b1badfe1a90abb58f5ce46b9d31ff4be4ef0557f0b6de75a7f02013"
 
 package:
   name: ivert
@@ -42,20 +42,21 @@ requirements:
     - netCDF4
     - numexpr
     - numpy
+    - packaging
     - pandas
     - psutil
+    - pyogrio
     - pyproj
     - pytables
     - rasterio
     - scipy
     - shapely
-    - six
     - tabulate
     - tqdm
     - xarray
-    - fetchez
-    - globato
-    - transformez
+    - fetchez >=0.6.13
+    - globato >=0.3.9
+    - transformez >=1.0.0
 
 tests:
   - python:
