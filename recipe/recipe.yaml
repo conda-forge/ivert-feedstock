@@ -2,9 +2,9 @@ schema_version: 1
 
 context:
   python_min: "3.12"
-  version: "0.7.0"
+  version: "0.7.1"
   build_number: 0
-  sha256: "8c9b588c5b1badfe1a90abb58f5ce46b9d31ff4be4ef0557f0b6de75a7f02013"
+  sha256: "8a5c7014d2997111ebccad594a699fe2c3381a00b0ecb0ed656e99d3600d4c10"
 
 package:
   name: ivert
@@ -30,31 +30,30 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - click
+    - click >=8.1.7
     # colorama is required by click on Windows for ANSI color support. Listed
     # unconditionally because noarch packages cannot use platform selectors; it
     # is a small, pure-Python no-op on non-Windows platforms.
-    - colorama
-    - dateparser
-    - geopandas
-    - h5py
-    - matplotlib-base
-    - netCDF4
-    - numexpr
-    - numpy
-    - packaging
-    - pandas
-    - psutil
-    - pyogrio
-    - pyproj
-    - pytables
-    - rasterio
-    - scipy
-    - shapely
-    - tabulate
-    - tqdm
-    - xarray
-    - fetchez >=0.6.13
+    - colorama >=0.4.6
+    - dateparser >=1.2.0
+    - geopandas >=1.0.0
+    - h5py >=3.12.1
+    - matplotlib-base >=3.8.0
+    - netCDF4 >=1.7.1.post1
+    - numpy >=1.26.0
+    - packaging >=23.2
+    - pandas >=2.1.2
+    - psutil >=5.9.6
+    - pyogrio >=0.8.0
+    - pyproj >=3.7.0
+    - pytables >=3.10.0
+    - rasterio >=1.4.1
+    - scipy >=1.11.2
+    - shapely >=2.0.3
+    - tabulate >=0.9.0
+    - tqdm >=4.66.0
+    - xarray >=2023.10.0
+    - fetchez >=0.9.1
     - globato >=0.3.9
     - transformez >=1.0.0
 
